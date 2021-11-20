@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./index.css">
+ <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+ <title>Clock</title>
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+   <div class="logo">
+    <img src="./images/clock_logo.png" alt="">
+   </div>
+   <div class="time">
+    <div class="title">TIME</div>
+    <div class="clock">
+      <div id="hour">00<br>hour</div>
+      <span>:</span>
+      <div id="minute">00 mins</div>
+      <span>:</span>
+      <div id="seconds">00 secs</div>
+      <span>:</span>
+      <div id="session" style="background-image: url(./images/AM_svg.svg);color: aliceblue;">AM</div>
+    </div>
+   </div>
+ </div>
+ <div class="content">
+  <div class="alarm">
+  <table border="0">
+   <tr>
+    <td width=50px><img src="./images/wake_up.svg" alt=""></td>
+    <td width=141px>Set wake up time</td>
+    <td><select name="" id="wake">
+      <option value="">Blank</option>
+      <option value="08 AM-09 AM">08 AM-09 AM</option>
+      <option value="09 AM-10 AM">09 AM-10 AM</option>
+      <option value="10 AM-11 AM">10 AM-11 AM</option>
+      <option value="11 AM-12 PM">11 AM-12 PM</option>
+    </select>
+    </td>
+   </tr>
+   <tr>
+    <td><img src="./images/lunch_time.svg" alt=""></td>
+    <td>Set lunch time</td>
+    <td><select name="" id="lunch">
+      <option value="">Blank</option>
+     <option value="08 AM-09 AM">08 AM-09 AM</option>
+      <option value="09 AM-10 AM">09 AM-10 AM</option>
+      <option value="10 AM-11 AM">10 AM-11 AM</option>
+      <option value="11 AM-12 PM">11 AM-12 PM</option>
+    </select>
+    </td>
+   </tr>
+   <tr>
+    <td><img src="./images/nap_time.svg" alt=""></td>
+    <td>Set sleep time</td>
+    <td><select name="" id="nap">
+      <option value="">Blank</option>
+     <option value="08 AM-09 AM">08 AM-09 AM</option>
+      <option value="09 AM-10 AM">09 AM-10 AM</option>
+      <option value="10 AM-11 AM">10 AM-11 AM</option>
+      <option value="11 AM-12 PM">11 AM-12 PM</option>
+    </select>
+    </td>
+   </tr>
+  </table>
+ </div>
+ <div class="randomImage">
+  <div class="image1">
+   <img src="./images/lunch_image.svg" alt="">
+   <h1>Let's have some lunch!!</h1>
+  </div>
+ </div>
+ <div class="btn">
+  <button onclick="result()" >Set Time !</button>
+ </div>
+ <div class="output" id="output">
+   <p class="outputP" id="waket">wake</p>
+   <p class="outputP" id="luncht">lunch</p>
+   <p class="outputP" id="napt">nap</p>
+
+ </div>
+ </div>
+ </div>
+ <script src="./index.js"></script>
+</body>
+</html>
